@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projet – Gestion de congés collaborateurs V2</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        .footer-hide {
+            display: none;
+        }
+
+        .navbar-nav {
+            align-items: center;
+        }
+
+        .navbar .nav-link {
+            padding: 0.5rem 1rem;
+            font-weight: 500;
+            transition: color 0.2s ease, transform 0.2s ease;
+        }
+
+        .navbar .nav-link:hover {
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        .navbar .nav-link.active {
+            color: #ffd700 !important;
+        }
+
+        .navbar-collapse {
+            justify-content: center !important;
+        }
+    </style>
+</head>
+
+<body class="dark-aware">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fade-in">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">RAMAKRISHNIN Santhoshraj</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="situations.html">Retour</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5 dark-bg dark-text fade-in">
+        <div class="container">
+            <h2 class="text-center text-primary mb-5">Projet - Gestion de congés collaborateurs V2</h2>
+
+            <div class="mb-4">
+                <h4>Contexte</h4>
+                <p>
+                    Suite au stage effectué en première année et au logiciel V1 que j'avais conçu,
+                    ACCEN INFORMATIQUE m'a confié l'amélioration de
+                    l'application de gestion des congés et la correction des limitations d'utilisation,
+                    ainsi que l'ajout de nouvelles fonctionnalités supplémentaires et l'optimisation visuelle.
+                    L'objectif était donc de leur fournir une V2 avec de meilleures fonctionnalités,
+                    un meilleur suivi et plus de possibilités de congés que la V1,
+                    mais aussi de leur proposer un aspect visuel moderne.
+                </p>
+            </div>
+
+            <div class="mb-4">
+                <h4>Besoin</h4>
+                <p>
+                    L'entreprise avait besoin de nouvelles fonctionnalités :
+                </p>
+                <ul>
+                    <li>Gestion des soldes en N-1 et N</li>
+                    <li>Ajustement manuel des soldes par les administrateurs</li>
+                    <li>Historique des modifications avec traçabilité</li>
+                    <li>Calcul automatique des RTT selon le temps de travail effectif</li>
+                    <li>Initialisation des soldes pour les anciens employés</li>
+                    <li>Suivi par mail des congés et des modifications faites par les administrateurs</li>
+                    <li>Une connexion sécurisée via SMTP et double authentification par mail</li>
+                </ul>
+            </div>
+
+            <div class="mb-4">
+                <h4>Environnement</h4>
+                <p>Le projet a été développé avec les technologies suivantes :</p>
+                <ul>
+                    <li>Langages : HTML, CSS, PHP, JavaScript</li>
+                    <li>Framework Bootstrap pour la mise en forme et la responsivité</li>
+                    <li>Outil : XAMPP</li>
+                    <li>Environnement de développement intégré : Visual Studio Code</li>
+                </ul>
+            </div>
+
+            <div class="mb-4">
+                <h4>Réalisation</h4>
+                <ul>
+                    <li>
+                        <strong>Analyse :</strong> Collecte des retours utilisateurs et identification
+                        des améliorations nécessaires.
+                    </li>
+                    <li>
+                        <strong>Base de données :</strong> Création de nouvelles tables pour gérer
+                        les périodes multiples, l'historique des modifications, la gestion des tokens et des mots de
+                        passe,
+                        ainsi que les autorisations (soldes négatifs, demandes dans le passé, etc.).
+                    </li>
+                    <li>
+                        <strong>Développement des fonctions :</strong> Ajout et amélioration de fonctions PHP pour
+                        calculer
+                        automatiquement les soldes CP et RTT sur deux années (N-1 et N) et plusieurs autres fonctions
+                        pour
+                        calculer l'ancienneté, le basculement entre deux années/périodes différentes et plusieurs
+                        fonctions pour les autres
+                        fonctionnalités.
+                    </li>
+                    <li>
+                        <strong>Développement des interfaces :</strong> Page administrateur
+                        pour modifier
+                        manuellement les soldes avec traçabilité complète, mais aussi plusieurs autres interfaces pour
+                        saisir les congés maladie,
+                        permettre aux administrateurs de faire leurs demandes de congés également, tableau de bord et
+                        bien d'autres.
+                    </li>
+                    <li>
+                        <strong>Traçabilité :</strong> Système d'historique enregistrant toutes les
+                        modifications avec date, auteur et motif. Mais aussi un suivi via mail des demandes de congés.
+
+                    </li>
+                    <li>
+                        <strong>Tests :</strong> Validation des calculs et correction des bugs identifiés.
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="mb-4">
+                <h4>Bilan</h4>
+                <p>
+                    Cette V2 m'a permis d'approfondir mes compétences en développement back-end et front-end.
+                    Elle m'a permis d'apprendre de nouvelles choses comme le système de suivi et la double
+                    authentification lors de la connexion
+                    via les mails et les systèmes de logs.
+                </p>
+                <p>
+                    Cette expérience m'a aussi appris à faire évoluer une application en production
+                    en tenant compte des besoins utilisateurs et des contraintes.
+                </p>
+            </div>
+
+            <div class="mb-4">
+                <h4>Productions associées</h4>
+
+                <div class="row g-4 mt-3">
+
+                    <!-- Tableau de bord utilisateur -->
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <a href="img/tableau_de_bord_admin.png" target="_blank">
+                                <img src="img/tableau_de_bord_admin.png" class="card-img-top img-fluid"
+                                    style="max-height: 200px; object-fit: cover;" alt="Tableau de bord administrateur">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Interface administrateur</h5>
+                                <p class="card-text">Interface principale affichant les différentes interfaces
+                                    administrateur</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Disponibilité -->
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <a href="img/tableau_soldes.png" target="_blank">
+                                <img src="img/tableau_soldes.png" class="card-img-top img-fluid"
+                                    style="max-height: 200px; object-fit: cover;" alt="Tableau des soldes">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Tableau des soldes</h5>
+                                <p class="card-text">Tableau des soldes, avec tous les soldes en N-1, en N et
+                                    l'ancienneté</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interface administrateur -->
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <a href="img/conge_maladie.png" target="_blank">
+                                <img src="img/conge_maladie.png" class="card-img-top img-fluid"
+                                    style="max-height: 200px; object-fit: cover;" alt="Formulaire congés maladie">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Formulaire congés maladie</h5>
+                                <p class="card-text">Formulaire pour saisir les congés maladie</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gestion des utilisateurs -->
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <a href="img/validation.png" target="_blank">
+                                <img src="img/validation.png" class="card-img-top img-fluid"
+                                    style="max-height: 200px; object-fit: cover;" alt="Validations">
+                            </a>
+                            <a href="img/recuperation.png" target="_blank">
+                                <img src="img/recuperation.png" class="card-img-top img-fluid mt-2"
+                                    style="max-height: 200px; object-fit: cover;" alt="Récupération">
+                            </a>
+                            <a href="img/modification.png" target="_blank">
+                                <img src="img/modification.png" class="card-img-top img-fluid mt-2"
+                                    style="max-height: 200px; object-fit: cover;" alt="Modification">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Gestion des demandes</h5>
+                                <p class="card-text">Permet de valider les différentes demandes de congés et
+                                    aussi de gérer les demandes de modifications sur une demande validée</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Concepteur BDD -->
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <a href="img/gestion.png" target="_blank">
+                                <img src="img/gestion.png" class="card-img-top img-fluid"
+                                    style="max-height: 200px; object-fit: cover;" alt="Vue BDD XAMPP">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Gestion avancée</h5>
+                                <p class="card-text">Interface pour gérer les autorisations et les soldes</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Archive utilisateur -->
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <a href="img/action.png" target="_blank">
+                                <img src="img/action.png" class="card-img-top img-fluid mt-2"
+                                    style="max-height: 200px; object-fit: cover;" alt="Historique congés">
+                            </a>
+                            <a href="img/mail.png" target="_blank">
+                                <img src="img/mail.png" class="card-img-top img-fluid mt-2"
+                                    style="max-height: 200px; object-fit: cover;" alt="mail congés">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Historique des actions et mail</h5>
+                                <p class="card-text">Log de chaque action et différents mails de suivie</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Structure BDD -->
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <a href="table.png" target="_blank">
+                                <img src="img/table.png" class="card-img-top img-fluid"
+                                    style="max-height: 200px; object-fit: cover;" alt="Structure BDD">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Structure de la BDD</h5>
+                                <p class="card-text">Vue d’ensemble des tables et relations de la base de données.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h4>Compétences mises en œuvre</h4>
+                <ul>
+                    <li>Analyse des besoins utilisateurs</li>
+                    <li>Conception et amélioration de bases de données</li>
+                    <li>Développement PHP</li>
+                    <li>Mise en place de systèmes de traçabilité (log et mail)</li>
+                    <li>Optimisation du code</li>
+                    <li>Conception d'interfaces d'administration et optimisation visuelle</li>
+                    <li>Tests et débogage</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5 fade-in">
+        <div class="container">
+            <p>&copy; 2025 RAMAKRISHNIN Santhoshraj – Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
