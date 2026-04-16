@@ -1,0 +1,160 @@
+<!DOCTYPE html> 
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact – RAMAKRISHNIN Santhoshraj</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+<style>
+  .footer-hide {
+    display: none;
+  }
+  
+    .navbar-nav {
+      align-items: center;              /* Aligne verticalement tous les liens */
+    }
+
+    .navbar .nav-link {
+      padding: 0.5rem 1rem;            
+      font-weight: 500;                
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+
+    .navbar .nav-link:hover {
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    .navbar .nav-link.active {
+      color: #ffd700 !important;       /* Couleur spéciale pour la page active */
+    }
+
+    /* Empêche un espace inégal au centre */
+    .navbar-collapse {
+      justify-content: center !important;
+    }
+</style>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fade-in">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="index.html">RAMAKRISHNIN Santhoshraj</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+		<ul class="navbar-nav gap-4">
+			<li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+			<li class="nav-item"><a class="nav-link" href="parcours.html">Parcours scolaire</a></li>
+			<li class="nav-item"><a class="nav-link" href="experiences.html">Expériences professionnelles</a></li>
+			<li class="nav-item"><a class="nav-link" href="situations.html">Situations professionnelles</a></li>
+			<li class="nav-item"><a class="nav-link" href="certifications.html">Certification</a></li>
+			<li class="nav-item"><a class="nav-link" href="veille.html">Veille technologique</a></li>
+			<li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+		</ul>	
+	</div>
+	</div>
+</nav>
+
+<!-- ===== CONTACT CARDS ===== -->
+<section class="py-5">
+  <div class="container text-center">
+    <h1 class="text-primary fw-bold mb-5 fade-in">Contactez-moi</h1>
+    <div class="row justify-content-center g-4">
+
+      <!-- LinkedIn -->
+      <div class="col-md-5">
+        <div class="card shadow-lg p-4 fade-in" style="background-color: #222; border-radius: 1rem;">
+          <div class="card-body">
+            <h3 class="card-title text-white mb-3">LinkedIn</h3>
+            <p class="card-text fs-5">
+              <a href="https://www.linkedin.com/in/santhoshraj-ramakrishnin-b60580329/" 
+                 target="_blank" 
+                 class="btn btn-primary px-4">
+                 <i class="bi bi-linkedin me-2"></i> Mon LinkedIn
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="col-md-5">
+        <div class="card shadow-lg p-4 fade-in" style="background-color: #222; border-radius: 1rem;">
+          <div class="card-body">
+            <h3 class="card-title text-white mb-3">Email</h3>
+            <p class="card-text fs-5">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ramakrishnin.santhoshraj@gmail.com" 
+                 target="_blank" 
+                 class="btn btn-info px-4 text-white">
+                 <i class="bi bi-envelope-fill me-2"></i> Envoyer un mail
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+   <!-- ===== FORMULAIRE DE CONTACT ===== -->
+<div class="row justify-content-center mt-5 d-none"> <!-- Formulaire masqué ici -->
+  <div class="col-md-8 col-lg-6">
+    <form action="#" method="post" class="fade-in">
+      <div class="mb-3 text-start">
+        <label for="name" class="form-label text-white">Nom *</label>
+        <input type="text" class="form-control" id="name" name="name" required placeholder="Votre nom" />
+      </div>
+      <div class="mb-3 text-start">
+        <label for="email" class="form-label text-white">Email *</label>
+        <input type="email" class="form-control" id="email" name="email" required placeholder="Votre email" />
+      </div>
+      <div class="mb-3 text-start">
+        <label for="subject" class="form-label text-white">Sujet</label>
+        <input type="text" class="form-control" id="subject" name="subject" placeholder="Sujet de votre message" />
+      </div>
+      <div class="mb-3 text-start">
+        <label for="message" class="form-label text-white">Message *</label>
+        <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Votre message"></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary px-5">Envoyer</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+<div class="text-center my-4">
+  <a href="index.html" class="btn btn-primary">Accueil</a>
+</div>
+
+
+
+<!-- ===== FOOTER ===== -->
+<footer class="bg-dark text-white text-center py-4 mt-5 fade-in">
+  <div class="container">
+    <div class="mb-3 footer-hide">
+      <a href="#" class="text-white me-3">Conditions d'utilisation</a>
+      <a href="#" class="text-white me-3">Politique de confidentialité</a>
+      <a href="#" class="text-white me-3">Mentions légales</a>
+    </div>
+    <div class="mb-2 footer-hide">
+      <a href="https://www.linkedin.com" target="_blank" class="text-white me-3">LinkedIn</a>
+      <a href="https://github.com" target="_blank" class="text-white">GitHub</a>
+    </div>
+    <p class="mb-0">&copy; 2025 RAMAKRISHNIN Santhoshraj – Tous droits réservés</p>
+  </div>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
