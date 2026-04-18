@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio – RAMAKRISHNIN Santhoshraj | BTS SIO SLAM</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    .footer-hide {
+      display: none;
+    }
+
+    .navbar-nav {
+      align-items: center;
+      /* Aligne verticalement tous les liens */
+    }
+
+    .navbar .nav-link {
+      padding: 0.5rem 1rem;
+      font-weight: 500;
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+
+    .navbar .nav-link:hover {
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    .navbar .nav-link.active {
+      color: #ffd700 !important;
+      /* Couleur spéciale pour la page active */
+    }
+
+    /* Empêche un espace inégal au centre */
+    .navbar-collapse {
+      justify-content: center !important;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fade-in">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="index.html">RAMAKRISHNIN Santhoshraj</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav gap-4">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="parcours.html">Parcours scolaire</a></li>
+          <li class="nav-item"><a class="nav-link" href="experiences.html">Expériences professionnelles</a></li>
+          <li class="nav-item"><a class="nav-link" href="situations.html">Situations professionnelles</a></li>
+          <li class="nav-item"><a class="nav-link" href="certifications.html">Certification</a></li>
+          <li class="nav-item"><a class="nav-link" href="veille.html">Veille technologique</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== ACCUEIL ===== -->
+  <section class="hero py-5 text-center fade-in dark-bg dark-text">
+    <div class="container">
+      <h2 class="text-primary mb-3 slide-up">Bienvenue sur mon portfolio</h2>
+      <h1 class="display-5 fw-bold slide-up">Bonjour 👋, je m'appelle Santhoshraj RAMAKRISHNIN</h1>
+      <p class="lead mt-3 mb-4 slide-up">
+        Ayant effectué un stage à <strong>ACCEN INFORMATIQUE</strong>, je prépare un
+        <strong>BTS SIO option SLAM</strong>, le développement web est au cœur de mes centres d’intérêt, avec une
+        préférence pour les langages
+        <strong>JavaScript</strong>, <strong>PHP</strong>, <strong>HTML</strong> et <strong>CSS</strong>.
+      </p>
+      <a href="parcours.html" class="btn btn-primary btn-lg slide-up">Mon parcours scolaire</a>
+    </div>
+
+    <div class="col-md-4 slide-up mx-auto">
+      <div class="card shadow-lg border-0 h-100 dark-bg">
+        <div class="card-body text-center">
+          <h5 class="card-title text-primary">Grille des compétences</h5>
+          <p class="card-text">Consulter la grille des compétences au format PDF.</p>
+
+          <a href="grille_des_competences.pdf" target="_blank">
+            Ouvrir la grille des compétences
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-dark text-white text-center py-4 mt-5 fade-in">
+    <div class="container">
+      <div class="mb-3 footer-hide">
+        <a href="#" class="text-white me-3">Conditions d'utilisation</a>
+        <a href="#" class="text-white me-3">Politique de confidentialité</a>
+        <a href="#" class="text-white me-3">Mentions légales</a>
+      </div>
+      <div class="mb-2 footer-hide">
+        <a href="https://www.linkedin.com" target="_blank" class="text-white me-3">LinkedIn</a>
+        <a href="https://github.com" target="_blank" class="text-white">GitHub</a>
+      </div>
+      <p id="copyright" class="mb-0">&copy; 2025 RAMAKRISHNIN Santhoshraj – Tous droits réservés</p>
+    </div>
+  </footer>
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
